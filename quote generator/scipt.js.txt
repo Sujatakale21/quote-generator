@@ -1,0 +1,21 @@
+const quotes = [
+  {
+    quote: "Believe in yourself",
+    author: "Unknown"
+  },
+  {
+    quote: "Success is not final, failure is not fatal",
+    author: "Winston Churchill"
+  },
+  {
+    quote: "Do something today that your future self will thank you for",
+    author: "Unknown"
+  }
+];
+
+function newQuote() {
+  const random = Math.floor(Math.random() * quotes.length);
+  
+  document.getElementById("quote").innerText = quotes[random].quote;
+  document.getElementById("author").innerText = "- " + quotes[random].author;
+}
